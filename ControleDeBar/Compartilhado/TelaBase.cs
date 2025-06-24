@@ -18,7 +18,14 @@ public abstract class TelaBase<Tipo> where Tipo : EntidadeBase<Tipo>
         Console.WriteLine($"1 - Cadastro de {nomeEntidade}");
         Console.WriteLine($"2 - Editar {nomeEntidade}");
         Console.WriteLine($"3 - Excluir {nomeEntidade}");
-        Console.WriteLine($"4 - Visualizar {nomeEntidade}s");
+        if (nomeEntidade == "Garçom")
+        {
+            Console.WriteLine("4 - Visualizar Garçons");
+        }
+        else
+        {
+            Console.WriteLine($"4 - Visualizar {nomeEntidade}s");
+        }
         Console.WriteLine($"S - Sair");
 
         Console.WriteLine();
