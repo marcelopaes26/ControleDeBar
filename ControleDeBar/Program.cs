@@ -1,5 +1,8 @@
 ﻿using ControleDeBar.ConsoleApp.Compartilhado;
 using ControleDeBar.ConsoleApp.ModuloConta;
+using ControleDeBar.Dominio.ModuloMesa;
+using ControleDeBar.Infraestrutura.Arquivos.Compartilhado;
+using ControleDeBar.Infraestrutura.Arquivos.ModuloMesa;
 
 namespace ControleDeBar.ConsoleApp
 {
@@ -56,6 +59,7 @@ namespace ControleDeBar.ConsoleApp
                     }
                 }
 
+                  
             }
         }
     }

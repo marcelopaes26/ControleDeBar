@@ -1,7 +1,12 @@
 using ControleDeBar.ConsoleApp.Compartilhado;
-using ControleDeBar.ConsoleApp.ModuloGarcom;
-using ControleDeBar.ConsoleApp.ModuloMesa;
-using ControleDeBar.ConsoleApp.ModuloProduto;
+using ControleDeBar.Dominio.ModuloConta;
+using ControleDeBar.Dominio.ModuloGarcom;
+using ControleDeBar.Dominio.ModuloMesa;
+using ControleDeBar.Dominio.ModuloProduto;
+using ControleDeBar.Infraestrutura.Memoria.ModuloConta;
+using ControleDeBar.Infraestrutura.Memoria.ModuloGarcom;
+using ControleDeBar.Infraestrutura.Memoria.ModuloMesa;
+using ControleDeBar.Infraestrutura.Memoria.ModuloProduto;
 
 namespace ControleDeBar.ConsoleApp.ModuloConta;
 
@@ -31,7 +36,7 @@ public class TelaConta : ITela
 
         Console.WriteLine($"1 - Cadastro de Conta");
         Console.WriteLine($"2 - Fechamento de Conta");
-        Console.WriteLine($"3 - Gerenciar Pedidos da Conta");
+        Console.WriteLine($"3 - Gerênciar Pedidos da Conta");
         Console.WriteLine($"4 - Visualizar Contas");
         Console.WriteLine($"5 - Visualizar Contas em Aberto");
         Console.WriteLine($"6 - Visualizar Contas Fechadas");
@@ -168,15 +173,10 @@ public class TelaConta : ITela
             "Id", "Titular", "Mesa", "Garçom", "Abertura", "Status"
         );
 
-        Conta[] contas = repositorioConta.SelecionarContas();
+        List<Conta> contas = repositorioConta.SelecionarContas();
 
-        for (int i = 0; i < contas.Length; i++)
+        foreach (Conta c in contas)
         {
-            Conta c = contas[i];
-
-            if (c == null)
-                continue;
-
             string statusConta = c.EstaAberta ? "Aberta" : "Fechada";
 
             Console.WriteLine(
@@ -188,7 +188,7 @@ public class TelaConta : ITela
         ApresentarMensagem("Digite ENTER para continuar...", ConsoleColor.DarkYellow);
     }
 
-     public void VisualizarContasEmAberto()
+    public void VisualizarContasEmAberto()
     {
         ExibirCabecalho();
 
@@ -201,15 +201,10 @@ public class TelaConta : ITela
             "Id", "Titular", "Mesa", "Garçom", "Abertura", "Status"
         );
 
-        Conta[] contas = repositorioConta.SelecionarContasEmAberto();
+        List<Conta> contasEmAberto = repositorioConta.SelecionarContasEmAberto();
 
-        for (int i = 0; i < contas.Length; i++)
+        foreach (Conta c in contasEmAberto)
         {
-            Conta c = contas[i];
-
-            if (c == null)
-                continue;
-
             string statusConta = c.EstaAberta ? "Aberta" : "Fechada";
 
             Console.WriteLine(
@@ -234,15 +229,10 @@ public class TelaConta : ITela
             "Id", "Titular", "Mesa", "Garçom", "Abertura", "Status"
         );
 
-        Conta[] contas = repositorioConta.SelecionarContasFechadas();
+        List<Conta> contasFechadas = repositorioConta.SelecionarContasFechadas();
 
-        for (int i = 0; i < contas.Length; i++)
+        foreach (Conta c in contasFechadas)
         {
-            Conta c = contas[i];
-
-            if (c == null)
-                continue;
-
             string statusConta = c.EstaAberta ? "Aberta" : "Fechada";
 
             Console.WriteLine(
@@ -274,15 +264,10 @@ public class TelaConta : ITela
         
         decimal totalFaturamento = 0.0m;
 
-        Conta[] contasFaturamento = repositorioConta.SelecionarContasPorData(dataFaturamento);
+        List<Conta> contasFaturamento = repositorioConta.SelecionarContasPorData(dataFaturamento);
 
-        for (int i = 0; i < contasFaturamento.Length; i++)
+        foreach (Conta c in contasFaturamento)
         {
-            Conta c = contasFaturamento[i];
-
-            if (c == null)
-                continue;
-
             totalFaturamento += c.CalcularValorTotal();
 
             string statusConta = c.EstaAberta ? "Aberta" : "Fechada";
@@ -292,7 +277,7 @@ public class TelaConta : ITela
                 c.Id, c.Titular, c.Mesa.Numero, c.Garcom.Nome, c.Abertura.ToShortDateString(), statusConta
             );
         }
-
+       
         Console.WriteLine();
 
         Console.WriteLine($"O Total faturado do dia foi: {totalFaturamento.ToString("C2")}");

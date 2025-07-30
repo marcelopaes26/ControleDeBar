@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\2. Domínio\ClassLibrary1\ControleDeBar.Dominio.csproj" />
+    <ProjectReference Include="..\ControleDeBar.Infraestrutura.Arquivo\ControleDeBar.Infraestrutura.Arquivos.csproj" />
+    <ProjectReference Include="..\ControleDeBar.Infraestrutura.Memoria\ControleDeBar.Infraestrutura.Memoria.csproj" />
+  </ItemGroup>
+
 </Project>
