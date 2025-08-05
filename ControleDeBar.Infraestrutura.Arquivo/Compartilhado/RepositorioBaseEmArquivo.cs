@@ -18,7 +18,7 @@ public abstract class RepositorioBaseEmArquivo<Tipo> where Tipo : EntidadeBase<T
 
         foreach (Tipo registro in registros)
         {
-            if (registro.Id > maiorId)
+            if (registro != null && registro.Id > maiorId)
                 maiorId = registro.Id;
         }
 
