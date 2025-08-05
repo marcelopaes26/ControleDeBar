@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "Td1bQFGFR+0LYn2V7LOKmU/vEaWnqxcARLMb6T8kZDg=",
+  "Source": "ControleDeBar.WebApp",
+  "BasePath": "_content/ControleDeBar.WebApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ControleDeBar.WebApp\\wwwroot",
+      "Source": "ControleDeBar.WebApp",
+      "ContentRoot": "C:\\Users\\Marcelo\\OneDrive\\Documentos\\Academia do Programador\\ControleDeBar\\1. Apresentação\\ControleDeBar.WebApp\\wwwroot\\",
+      "BasePath": "_content/ControleDeBar.WebApp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Marcelo\\OneDrive\\Documentos\\Academia do Programador\\ControleDeBar\\1. Apresentação\\ControleDeBar.WebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ControleDeBar.WebApp.styles.css",
+      "SourceId": "ControleDeBar.WebApp",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Marcelo\\OneDrive\\Documentos\\Academia do Programador\\ControleDeBar\\1. Apresentação\\ControleDeBar.WebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/ControleDeBar.WebApp",
+      "RelativePath": "ControleDeBar.WebApp.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Marcelo\\OneDrive\\Documentos\\Academia do Programador\\ControleDeBar\\1. Apresentação\\ControleDeBar.WebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ControleDeBar.WebApp.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\Marcelo\\OneDrive\\Documentos\\Academia do Programador\\ControleDeBar\\1. Apresentação\\ControleDeBar.WebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ControleDeBar.WebApp.bundle.scp.css",
+      "SourceId": "ControleDeBar.WebApp",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Marcelo\\OneDrive\\Documentos\\Academia do Programador\\ControleDeBar\\1. Apresentação\\ControleDeBar.WebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/ControleDeBar.WebApp",
+      "RelativePath": "ControleDeBar.WebApp.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Marcelo\\OneDrive\\Documentos\\Academia do Programador\\ControleDeBar\\1. Apresentação\\ControleDeBar.WebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ControleDeBar.WebApp.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Marcelo\\OneDrive\\Documentos\\Academia do Programador\\ControleDeBar\\1. Apresentação\\ControleDeBar.WebApp\\wwwroot\\favicon.ico",
+      "SourceId": "ControleDeBar.WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Marcelo\\OneDrive\\Documentos\\Academia do Programador\\ControleDeBar\\1. Apresentação\\ControleDeBar.WebApp\\wwwroot\\",
+      "BasePath": "_content/ControleDeBar.WebApp",
+      "RelativePath": "favicon.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
+    }
+  ]
+}

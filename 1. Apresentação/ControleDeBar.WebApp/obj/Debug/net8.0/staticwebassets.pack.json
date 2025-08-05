@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Marcelo\\OneDrive\\Documentos\\Academia do Programador\\ControleDeBar\\1. Apresentação\\ControleDeBar.WebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ControleDeBar.WebApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ControleDeBar.WebApp.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Marcelo\\OneDrive\\Documentos\\Academia do Programador\\ControleDeBar\\1. Apresentação\\ControleDeBar.WebApp\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ControleDeBar.WebApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ControleDeBar.WebApp.props",
+      "PackagePath": "build\\ControleDeBar.WebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ControleDeBar.WebApp.props",
+      "PackagePath": "buildMultiTargeting\\ControleDeBar.WebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ControleDeBar.WebApp.props",
+      "PackagePath": "buildTransitive\\ControleDeBar.WebApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,56 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ControleDeBar.WebApp/1.0.0": {
+        "dependencies": {
+          "ControleDeBar.Dominio": "1.0.0",
+          "ControleDeBar.Infraestrutura.Arquivos": "1.0.0"
+        },
+        "runtime": {
+          "ControleDeBar.WebApp.dll": {}
+        }
+      },
+      "ControleDeBar.Dominio/1.0.0": {
+        "runtime": {
+          "ControleDeBar.Dominio.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ControleDeBar.Infraestrutura.Arquivos/1.0.0": {
+        "dependencies": {
+          "ControleDeBar.Dominio": "1.0.0"
+        },
+        "runtime": {
+          "ControleDeBar.Infraestrutura.Arquivos.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ControleDeBar.WebApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ControleDeBar.Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ControleDeBar.Infraestrutura.Arquivos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
