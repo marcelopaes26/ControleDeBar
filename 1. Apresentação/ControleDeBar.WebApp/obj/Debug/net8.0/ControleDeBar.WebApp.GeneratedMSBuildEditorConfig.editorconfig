@@ -18,6 +18,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Marcelo\OneDrive\Documentos\Academia do Programador\ControleDeBar\1. Apresentação\ControleDeBar.WebApp
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Marcelo/OneDrive/Documentos/Academia do Programador/ControleDeBar/1. Apresentação/ControleDeBar.WebApp/Views/Garcom/Cadastrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FyY29tXENhZGFzdHJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marcelo/OneDrive/Documentos/Academia do Programador/ControleDeBar/1. Apresentação/ControleDeBar.WebApp/Views/Garcom/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FyY29tXEVkaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marcelo/OneDrive/Documentos/Academia do Programador/ControleDeBar/1. Apresentação/ControleDeBar.WebApp/Views/Garcom/Excluir.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FyY29tXEV4Y2x1aXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marcelo/OneDrive/Documentos/Academia do Programador/ControleDeBar/1. Apresentação/ControleDeBar.WebApp/Views/Garcom/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FyY29tXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Marcelo/OneDrive/Documentos/Academia do Programador/ControleDeBar/1. Apresentação/ControleDeBar.WebApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
