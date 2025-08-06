@@ -18,6 +18,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Marcelo\OneDrive\Documentos\Academia do Programador\ControleDeBar\1. Apresentação\ControleDeBar.WebApp
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Marcelo/OneDrive/Documentos/Academia do Programador/ControleDeBar/1. Apresentação/ControleDeBar.WebApp/Views/Conta/Abrir.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFcQWJyaXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marcelo/OneDrive/Documentos/Academia do Programador/ControleDeBar/1. Apresentação/ControleDeBar.WebApp/Views/Conta/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Marcelo/OneDrive/Documentos/Academia do Programador/ControleDeBar/1. Apresentação/ControleDeBar.WebApp/Views/Garcom/Cadastrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FyY29tXENhZGFzdHJhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
