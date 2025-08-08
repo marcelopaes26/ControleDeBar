@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ControleDeBar.WebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a74ed0562e780639970916ea6a9dc0c6816bd6bd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1bfac7f4ecd76f66ab5868d3f21e4090ac36a88")]
 [assembly: System.Reflection.AssemblyProductAttribute("ControleDeBar.WebApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ControleDeBar.WebApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
