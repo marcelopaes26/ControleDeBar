@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ControleDeBar.Dominio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7c337fd55b9eed5f6ee5750976a2e7d45d02d8c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+610f5a96589383404434611c6d89df5be0d86394")]
 [assembly: System.Reflection.AssemblyProductAttribute("ControleDeBar.Dominio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ControleDeBar.Dominio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

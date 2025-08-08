@@ -1,6 +1,7 @@
 using ControleDeBar.Dominio.ModuloConta;
 using ControleDeBar.Dominio.ModuloGarcom;
 using ControleDeBar.Dominio.ModuloMesa;
+using ControleDeBar.Dominio.ModuloProduto;
 using ControleDeBar.Infraestrutura.Arquivos.Compartilhado;
 using ControleDeBar.Infraestrutura.Arquivos.ModuloConta;
 using ControleDeBar.Infraestrutura.Arquivos.ModuloGarcom;
@@ -29,11 +30,17 @@ public class ContaController : Controller
         repositorioProduto = new RepositorioProdutoEmArquivo(contextoDados);
     }
 
-
     [HttpGet]
-    public IActionResult Index()
+    public IActionResult Index(string? status)
     {
-        List<Conta> contas = repositorioConta.SelecionarRegistros();
+        List<Conta> contas;
+
+        switch (status)
+        {
+            case "abertas": contas = repositorioConta.SelecionarContasEmAberto(); break;
+            case "fechadas": contas = repositorioConta.SelecionarContasFechadas(); break;
+            default: contas = repositorioConta.SelecionarRegistros(); break;
+        }
 
         VisualizarContasViewModel visualizarContasVm = new VisualizarContasViewModel(contas);
 
@@ -69,5 +76,89 @@ public class ContaController : Controller
         repositorioConta.CadastrarRegistro(conta);
 
         return RedirectToAction(nameof(Index));
+    }
+
+    [HttpGet]
+    public IActionResult Fechar(int id)
+    {
+        Conta contaSelecionada = repositorioConta.SelecionarRegistroPorId(id);
+
+        FecharContaViewModel fecharContaVm = new FecharContaViewModel(
+            contaSelecionada.Id,
+            contaSelecionada.Titular,
+            contaSelecionada.Mesa.Numero,
+            contaSelecionada.Garcom.Nome,
+            contaSelecionada.CalcularValorTotal(),
+            contaSelecionada.Pedidos
+        );
+
+        return View(fecharContaVm);
+    }
+
+    [HttpPost]
+    public IActionResult FecharConfirmado(int id)
+    {
+        Conta contaSelecionada = repositorioConta.SelecionarRegistroPorId(id);
+
+        contaSelecionada.Fechar();
+
+        contextoDados.Salvar();
+
+        return RedirectToAction(nameof(Index));
+    }
+
+    [HttpGet]
+    public IActionResult GerenciarPedidos(int id)
+    {
+        Conta contaSelecionada = repositorioConta.SelecionarRegistroPorId(id);
+
+        List<Produto> produtos = repositorioProduto.SelecionarRegistros();
+
+        GerenciarPedidosViewModel gerenciarPedidosVm = new GerenciarPedidosViewModel(
+            contaSelecionada,
+            produtos
+        );
+
+        return View(gerenciarPedidosVm);
+    }
+
+    [HttpPost]
+    public IActionResult AdicionarPedido(int id, AdicionarPedidoViewModel adicionarPedidoVm)
+    {
+        Conta contaSelecionada = repositorioConta.SelecionarRegistroPorId(id);
+
+        Produto produtoSelecionado = repositorioProduto.SelecionarRegistroPorId(adicionarPedidoVm.IdProduto);
+
+        Pedido pedido = contaSelecionada.RegistrarPedido(produtoSelecionado, adicionarPedidoVm.QuantidadeSolicitada);
+
+        contextoDados.Salvar();
+
+        List<Produto> produtos = repositorioProduto.SelecionarRegistros();
+
+        GerenciarPedidosViewModel gerenciarPedidosVm = new GerenciarPedidosViewModel(
+            contaSelecionada,
+            produtos
+        );
+
+        return View(nameof(GerenciarPedidos), gerenciarPedidosVm);
+    }
+
+    [HttpPost]
+    public IActionResult RemoverPedido(int id, int idPedido)
+    {
+        Conta contaSelecionada = repositorioConta.SelecionarRegistroPorId(id);
+
+        contaSelecionada.RemoverPedido(idPedido);
+
+        contextoDados.Salvar();
+
+        List<Produto> produtos = repositorioProduto.SelecionarRegistros();
+
+        GerenciarPedidosViewModel gerenciarPedidosVm = new GerenciarPedidosViewModel(
+            contaSelecionada,
+            produtos
+        );
+
+        return View(nameof(GerenciarPedidos), gerenciarPedidosVm);
     }
 }
