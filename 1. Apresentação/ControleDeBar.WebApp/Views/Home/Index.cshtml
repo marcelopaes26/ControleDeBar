@@ -2,8 +2,8 @@
     ViewBag.Titulo = "Página Inicial";
 }
 
-<div class="row justify-content-center mt-5">
-	<div class="col">
+<div class="row g-5 justify-content-center mt-3">
+	<div class="col order-1 order-lg-0">
 		<h2 class="text-primary fs-1 fw-bold">Seja bem-vindo/a!</h2>
 
 		<p class="fs-4 mt-3">
@@ -22,5 +22,9 @@
 			<a asp-controller="Produto" asp-action="Index" class="btn btn-outline-primary fw-semibold px-5 rounded-3">Produtos</a>
 			<a asp-controller="Conta" asp-action="Index" class="btn btn-outline-primary fw-semibold px-5 rounded-3">Contas</a>
 		</div>
+	</div>
+
+	<div class="col-lg-5 order-0 order-lg-1">
+		<img src="~/images/undraw_beer.svg" class="img-fluid"/>
 	</div>
 </div>

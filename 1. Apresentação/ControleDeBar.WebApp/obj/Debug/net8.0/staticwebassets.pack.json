@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Marcelo\\OneDrive\\Documentos\\Academia do Programador\\ControleDeBar\\1. Apresentação\\ControleDeBar.WebApp\\wwwroot\\images\\undraw_beer.svg",
+      "PackagePath": "staticwebassets\\images\\undraw_beer.svg"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ControleDeBar.WebApp.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

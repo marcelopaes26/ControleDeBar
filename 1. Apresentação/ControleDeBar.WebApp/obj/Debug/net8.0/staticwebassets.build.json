@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Td1bQFGFR+0LYn2V7LOKmU/vEaWnqxcARLMb6T8kZDg=",
+  "Hash": "ABT1EP/WkIAof2zCvI39q6xerfxL0lWjcXMoM19T+5E=",
   "Source": "ControleDeBar.WebApp",
   "BasePath": "_content/ControleDeBar.WebApp",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Marcelo\\OneDrive\\Documentos\\Academia do Programador\\ControleDeBar\\1. Apresentação\\ControleDeBar.WebApp\\wwwroot\\images\\undraw_beer.svg",
+      "SourceId": "ControleDeBar.WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Marcelo\\OneDrive\\Documentos\\Academia do Programador\\ControleDeBar\\1. Apresentação\\ControleDeBar.WebApp\\wwwroot\\",
+      "BasePath": "_content/ControleDeBar.WebApp",
+      "RelativePath": "images/undraw_beer.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\undraw_beer.svg"
     }
   ]
 }
