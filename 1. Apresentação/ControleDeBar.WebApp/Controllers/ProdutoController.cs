@@ -67,9 +67,9 @@ public class ProdutoController : Controller
         if (!ModelState.IsValid)
             return View(editarVm);
 
-        var garcomEditado = new Produto(editarVm.Nome, editarVm.Valor);
+        var produtoEditado = new Produto(editarVm.Nome, editarVm.Valor);
 
-        repositorioProduto.EditarRegistro(editarVm.Id, garcomEditado);
+        repositorioProduto.EditarRegistro(editarVm.Id, produtoEditado);
 
         return RedirectToAction(nameof(Index));
     }
